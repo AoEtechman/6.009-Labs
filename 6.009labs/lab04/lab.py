@@ -607,13 +607,7 @@ if __name__ == "__main__":
     #    optionflags=_doctest_flags,
     #    verbose=False
     # )
-    # game = {'dimensions': (2, 4),'state': 'ongoing','board': [['.', 3, 1, 0],['.', '.', 1, 0]],'visible':  [[True, True, True, False],[False, False, True, False]]}
-    # print(render_2d_board(game, False))
-    # print( '.31_\\n__1_')
-    # print(dump(new_game_2d(2, 4, [(0, 0), (1, 0), (1, 1)])))
-    # game = {'dimensions': (2, 4),'board': [['.', 3, 1, 0],['.', '.', 1, 0]],'visible': [[False, True, False, False],[False, False, False, False]],'state': 'ongoing'}
-    # print(dig_2d(game, 0, 3))
-    # print(dump(game))
+    pass
 
 
     
