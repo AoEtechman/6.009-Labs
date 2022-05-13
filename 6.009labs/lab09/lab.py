@@ -782,9 +782,7 @@ def repl(environment = None):
             if i == 0:
                 res = result_and_env(exp, environment)
                 env = res[1]
-                # print(res[0].tail.head)
                 print(res[0])
-                # print(res[0].head)
                 i += 1
             else:
                 res = result_and_env(exp, env)
@@ -809,54 +807,4 @@ if __name__ == "__main__":
 
     # uncommenting the following line will run doctests from above
     # doctest.testmod()
-    # args = sys.argv[1:]
-    # environment = Environment(builtins())
-    # for elem in args:
-    #     res, environment = result_and_env(elem, environment)
-    # repl(environment)
-#     haha = result_and_env(expression("(:= foop 42)"))
-#     haha2 = result_and_env(expression("""(:= myfunc (function (var100) ((function (var99) ((function (var98) ((function (var97) ((function (var96) ((function (var95) ((function (var94) ((function (var93) ((function (var92) ((function (var91) ((function (var90) ((function (var89) ((function (var88) ((function (var87) ((function (var86) ((function (var85) ((function (var84) ((function (var83) ((function (var82) ((function (var81) ((function (var80) ((function (var79) ((function (var78) ((function (var77) ((function (var76) ((function (var75) ((function (var74) ((function (var73) ((function (var72) ((function (var71) ((function (var70) ((function (var69) ((function (var68) ((function (var67) ((function (var66) ((function (var65) ((function (var64) ((function (var63) ((function (var62) ((function (var61) ((function (var60) ((function (var59) ((function (var58) ((function (var57) ((function (var56) 
-# ((function (var55) ((function (var54) ((function (var53) ((function (var52) ((function 
-# (foop) ((function (var50) ((function (var49) ((function (var48) ((function (var47) ((function (var46) ((function (var45) ((function (var44) ((function (var43) ((function (var42) ((function (var41) ((function (var40) ((function (var39) ((function (var38) ((function (var37) ((function (var36) ((function (var35) ((function (var34) ((function (var33) ((function (var32) ((function (var31) ((function (var30) ((function (var29) ((function (var28) ((function (var27) ((function (var26) ((function (var25) ((function (var24) ((function (var23) ((function (var22) ((function (var21) ((function (var20) ((function (var19) ((function (var18) ((function (var17) ((function (var16) ((function (var15) ((function (var14) ((function (var13) ((function (var12) ((function (var11) ((function (var10) ((function (var9) ((function (var8) ((function (var7) ((function (var6) ((function (var5) ((function (var4) ((function (var3) ((function (var2) ((function (var1) ((function (var0) (set! foop 30)) 0)) 1)) 2)) 3)) 4)) 5)) 6)) 7)) 8)) 9)) 10)) 11)) 12)) 13)) 14)) 15)) 16)) 17)) 18)) 19)) 20)) 21)) 22)) 23)) 24)) 25)) 26)) 27)) 28)) 29)) 30)) 31)) 32)) 33)) 34)) 35)) 36)) 37)) 38)) 39)) 40)) 41)) 42)) 43)) 44)) 45)) 46)) 47)) 48)) 49)) 50)) 51)) 52)) 53)) 54)) 55)) 56)) 57)) 58)) 59)) 60)) 61)) 62)) 63)) 64)) 65)) 66)) 67)) 68)) 69)) 70)) 71)) 72)) 73)) 74)) 75)) 76)) 77)) 78)) 79)) 80)) 81)) 82)) 83)) 
-# 84)) 85)) 86)) 87)) 88)) 89)) 90)) 91)) 92)) 93)) 94)) 95)) 96)) 97)) 98)) 99)))"""), haha[1])
-#     haha3 = result_and_env(expression("(myfunc 7)"), haha2[1])
-    # haha = result_and_env(expression("(:= (contains? list_ elt) (if (=? nil list_) @f (if (=? (head list_) elt) @t (contains? (tail list_) elt))))"))
-    # haha1 = result_and_env(expression("(if (contains? (list 1 2 3) 2) 1 0)"), haha[1])
-#     
     repl()
-
-
-    # repl()
-    # haha = result_and_env(expression("(filter (function (x) (or (> x 0) (< x 0))) (list 1 1 1 1 0 0 0 -1 -1 -1 -1))"))
-    # haha1 = result_and_env(expression("(list 1 1 1 1 0 0 0 -1 -1 -1 -1)"))
-    # print(haha1[0].tail.tail.tail.tail.tail.tail.tail.tail.tail.tail.tail)
-    # print(check_if_list(haha1[0]))
-    # print(result_and_env(['begin', [':=', ['foo', 'bar'], ['function', ['x', 'y'], ['-', 'bar', 'x', 'y']]], [':=', 'bar', 7], [':=', 'something', ['foo', 6]], ['list', ['something', 2, 3], [['foo', 9], 8, 7]]])[0].head)
-    # haha = result_and_env(expression("(:= x 7)"))
-    # haha1 = result_and_env(expression("(:= y 8)"), haha[1])
-    # haha2 = result_and_env(expression("(:= (square x) (* x x))"), haha1[1])
-    # haha3 = result_and_env(expression("y"), haha2[1])
-    # haha4 = result_and_env(expression("x"), haha3[1])
-    # haha5 = result_and_env(expression("(square (del x))"), haha4[1])
-    # haha1 = result_and_env(expression("(filter (function (x) (> x 0)) x)"), haha[1])
-
-    # haha1 = result_and_env(expression("(:= x (list 7 9 3 2))"), haha[1])
-    # haha2 = result_and_env(expression("(map factorial x)"), haha1[1])
-    # haha2 = result_and_env(expression("(map factorial x)"), haha1[1])
-    # haha3 = result_and_env(expression("x"), haha2[1])
-    # haha4 = result_and_env(expression("(:= n 0)"), haha3[1])
-    # haha5 = result_and_env(expression("(:= (factorial n) (if (<= n 1) 1 (* n (factorial (- n 1)))))"))
-    
-    # haha = result_and_env(expression("(:= (factorial n) (if (<= n 1) 1 (* n (factorial (- n 1)))))"))
-    # haha1 = result_and_env(expression("(factorial 3)"), haha[1])
-    # print(haha1[0])
-    # haha1 = result_and_env(expression("(:= x (list 6 2 3 2))"), haha[1])
-    # haha2 = result_and_env(expression("(map factorial x)  "), haha1[1])
-    # haha = result_and_env(expression("(:= x (list 7 9 3 2))"))
-    # haha1 = result_and_env(expression("(map - x)"), haha[1])
-    # haha = check_if_list(haha[0])
-    # print(haha)
-    # haha = result_and_env(expression("(nth (list 1 2 3 4) 3)"))
-    # print(haha[0])
-    # print(result_and_env(expression("(=? nil nil)")))
-    # repl()
