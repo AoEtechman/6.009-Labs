@@ -232,26 +232,6 @@ def solve_puzzle(game):
 
 
 if __name__ == "__main__":
-    # game = [
-    #     [["computer"], ['wall'], ["target"]],
-    #     [['player'], ['computer', "target"], ['target', "computer"]],
-    # ]
-    # if victory_check(game):
-    #     print("True")
-    # else:
-    #     print("false")
-#     game = [
-#   [["wall"], ["wall"], ["wall"], ["wall"], [], []],
-#   [["wall"], [], ["target"], ["wall"], [], []],
-#   [["wall"], [], [], ["wall"], ["wall"], ["wall"]],
-#   [["wall"], ["target", "computer"], ["player"], [], [], ["wall"]],
-#   [["wall"], [], [], ["computer"], [], ["wall"]],
-#   [["wall"], [], [], ["wall"], ["wall"], ["wall"]],
-#   [["wall"], ["wall"], ["wall"], ["wall"], [], []]
-# ]
-
-    
-#     print(solve_puzzle(game))
     pass
     
    
