@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-from ast import Try
-from re import I
+
 import typing
 from util import read_osm_data, great_circle_distance, to_local_kml_url
 
@@ -305,89 +304,4 @@ if __name__ == '__main__':
     # additional code here will be run only when lab.py is invoked directly
     # (not when imported from test.py), so this is a good place to put code
     # used, for example, to generate the results for the online questions.
-    # nodes = set()
-    # i = 0
-    # for ways in read_osm_data('resources/cambridge.ways'):
-    #     try:
-    #         if way["tags"]["highway"] in ALLOWED_HIGHWAY_TYPES:
-    #             for node in way["nodes"]:
-    #                 if node not in nodes:
-    #                     nodes.add(node)
-    #                     i += 1
-    #     except KeyError:
-    #         i = i
-    # lst1 = []
-    # for node in read_osm_data("resources/midwest.nodes"):
-    #     if node["id"] == 233941454 or node["id"] == 233947199:
-    #         lst = []
-    #         lst.append(node["lat"])
-    #         lst.append(node["lon"])
-    #         lst1.append(tuple(lst))
-    # print(lst1)
-    # print(great_circle_distance(lst1[0], lst1[1]))
-    # dist = 0
-    # loclist = []
-    # nodes = []
-    # for way in read_osm_data('resources/midwest.ways'):
-    #     if way["id"] == 21705939:
-    #         nodeslst = (way["nodes"])
-    #         break
-    # for node1 in read_osm_data("resources/midwest.nodes"):
-    #     if nodeslst:   
-    #         if nodeslst[0] == node1["id"]:
-    #             lst = []
-    #             lst.append(node1["lat"])
-    #             lst.append(node1["lon"])
-    #             loclist.append(tuple(lst))
-    #             nodeslst.pop(0)
-    #     else:
-    #         break
-    # # for i in range(len(loclist)-1):
-    # #     dist += great_circle_distance(loclist[i], loclist[i+1])
-    # print(dist)
-
-                
-
-
-    
-    #         for i in range(len(way["nodes"]) -1):
-    #             lst = []
-    #             lst2 = []
-    #             lst.append(way["nodes"][i]["lat"])
-    #             lst.append(way["nodes"][i]["lon"])
-    #             lst2.append(way["nodes"][i+1]["lat"])
-    #             lst2.append(way["nodes"][i+1]["lon"])
-    #             dist += great_circle_distance(tuple(lst), tuple(lst2))
-    # print(dist)
-            
-    # # print(i)
-    #print(build_internal_representation("resources/midwest.nodes", "resources/midwest.ways"))
     pass
-    #print(find_fast_path(build_internal_representation("resources/mit.nodes", "resources/mit.ways"), (42.355, -71.1009), (42.3612, -71.092)))
-    # loclist = []
-    # for node1 in read_osm_data("resources/mit.nodes"):
-    #     if node1["id"] == 5:   
-    #         lst = []
-    #         lst.append(node1["lat"])
-    #         lst.append(node1["lon"])
-    #         loclist.append(tuple(lst))
-    # for node1 in read_osm_data("resources/mit.nodes"):
-    #     if node1["id"] == 6:   
-    #         lst = []
-    #         lst.append(node1["lat"])
-    #         lst.append(node1["lon"])
-    #         loclist.append(tuple(lst))
-    # for node1 in read_osm_data("resources/mit.nodes"):
-    #     if node1["id"] == 7:   
-    #         lst = []
-    #         lst.append(node1["lat"])
-    #         lst.append(node1["lon"])
-    #         loclist.append(tuple(lst))
-    # print(loclist) 
-    # dist5_6 = great_circle_distance(loclist[0], loclist[1])
-    # dist5_7 = great_circle_distance(loclist[0], loclist[2])
-    # print("5 to 6", dist5_6)
-    # print("5 to 7", dist5_7)
-    print(find_short_path_nodes(build_internal_representation("resources/cambridge.nodes", "resources/cambridge.ways"),6755532650 , 3149890479))
-    print(find_short_path(build_internal_representation("resources/cambridge.nodes", "resources/cambridge.ways"), (42.3858, -71.0783), (42.5465, -71.1787)))
-    
