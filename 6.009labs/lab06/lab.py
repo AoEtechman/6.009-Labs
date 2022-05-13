@@ -177,21 +177,9 @@ def files_from_sequence(stream):
 
 
 if __name__ == "__main__":
-    # why = download_file('https://hz.mit.edu/stronger6.jpg')
-    # # for elem in why:
-    # #     print("-------------")
-    # #     print(elem)
-    # #     break
-    # res = list(itertools.islice(download_file('https://hz.mit.edu/stronger6.jpg', 2), 10))
-    # print(res[:1])
     url = sys.argv[1]
     filename = sys.argv[2]
     res = http_response(url)
-    # if ".parts" == url[-6:] or res.getheader('content-type') == "text/parts-manifest":
-    #     with open(filename, 'wb') as f:
-    #         file = download_file(url)
-    #         for elem in file:
-    #             f.write(elem)
     if "-seq" == url[-4:]:
         i = 1
         file = download_file(url)
