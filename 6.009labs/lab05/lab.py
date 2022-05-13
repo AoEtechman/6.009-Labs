@@ -204,28 +204,6 @@ if __name__ == '__main__':
     import doctest
     _doctest_flags = doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
     doctest.testmod(optionflags=_doctest_flags)
-#     formula = [[("a", True)], [("b", False)]]
-#     formula2 = [[("b", False)]]
-#     formula3 = [
-#     [('a', True), ('b', True), ('c', True)],
-#     [('a', False), ('f', True)],
-#     [('d', False), ('e', True), ('a', True), ('g', True)],
-#     [('h', False), ('c', True), ('a', False), ('f', True)],
-# ]
-    # print(formula_trimmer(formula3, "a", True))
-    # [[("f", True)], [("h", False), ("c", True), ("f", True)]]
-    # formula = [[('a', True), ('a', False)], [('b', True), ('a', True)], [('b', True)], [('b', False), ('b', False), ('a', False)], [('c', True), ('d', True)], [('c', True), ('d', True)]]
-    # print(satisfying_assignment(formula, {}))
-    # formula = [[('b', True)], [('b', False), ('b', False)], [('c', True), ('d', True)], [('c', True), ('d', True)]]
-    # print(formula_trimmer(formula, "b", True))
-    # students = {'student0': ['session0', 'session1'], 'student1': ['session1', 'session2'], 'student2': ['session2']}
-    # sessions = {'session0': 2, 'session1': 1, 'session2': 2}
-    # haha = boolify_scheduling_problem(students, sessions)
-    # sched = satisfying_assignment(haha)
-    # for var, val in sched.items():
-    #     if val:
-    #         student, session = var.split("_")
-    #         # print(student, session)
     pass
 
 
